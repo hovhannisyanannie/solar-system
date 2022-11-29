@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="Media/media.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/ac375783d4.js" crossorigin="anonymous"></script>
+    <title>Project</title>
+</head>
+<body>
+
+    <!-- header start -->
+    <header>
+        <div class="container">
+            <div class="content">
+                <div class="logo">
+                    <a href="#">
+                        <img src="Logo/logo.jpg" alt="logo">
+                    </a>
+                </div>     
+                    <input type="checkbox" id="select">
+                    <label for="select">
+                        <i class="fa fa-bars" aria-hidden="true" id="bars"></i>
+                        <i class="fas fa-window-close" id="cancel"></i>
+                    </label> 
+                <!-- Nav start-->
+                <nav>     
+                    <ul id="menu">
+                        <li class="dropdown"><a href="#" id="menu1" onclick="showBox(sunPlanets)">Solar system<i class="fa fa-caret-down"></i></a>
+                            <ul class="submenu1">
+                                <li ><a href="#" id="menu2" onclick="showBox(starAnimation)">Stars</a></li>
+                                <li><a href="#" id="menu3" onclick="showBox(lunarEclipce)">Moon</a></li>
+                                <li><a href="#">Asteroids</a></li>  
+                            </ul>
+                        </li>
+                        <li class="dropdown"><a href="#">Planets</a></li>
+                        <li ><a href="#">Science</a></li>
+                        <li><a href="#">About us</a></li>
+                        <li class="contactUs"><a href="#">Contact us</a>
+                            <ul class="contact">
+                                <li class="side">
+                                    <h2>Contact us</h2>
+                                    <form action="" method="post" autocomplete="off">
+                                    <div>
+                                        <input type="text" placeholder="Name" id="name" required>
+                                    </div>
+                                    <div>
+                                        <input type="text" placeholder="Surname" id="name" required>
+                                    </div>
+                                    <div>
+                                      <input type="email" placeholder="Email" id="email">
+                                    </div>
+                                    <div class="message">
+                                      <input type="text" placeholder="Message" id="message" required>
+                                    </div>
+                                    <button type="submit">Send</button>
+                                    </form>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    </nav>
+                <!-- Nav end -->
+        </div>
+    </div>
+</header> 
+<!-- header end     -->
+    
+    <main>
+        <div class="container"> 
+            <div class="generalText">
+                <div class="text">
+                    <h1>Solar System Website</h1>
+                    <p>The website aims to provide detailed information about the Solar System, as well as information on recent studies.</p>
+                </div>
+                
+            </div>
+        <div id="general">
+                    <div id="sunPlanets">
+                        <div class="sun">
+                            <div class="small-sun"></div>
+                        </div>
+                        <div class="murcury">
+                            <div class="planet">
+                                <div class="shadow"></div>
+                            </div>
+                        </div>
+                        <div class="venus">
+                            <div class="planet">
+                                <div class="shadow"></div>
+                            </div>
+                        </div>
+                        <div class="earth">
+                            <div class="planet">
+                                <div class="shadow"></div>
+                            </div>
+                        </div>
+                        <div class="mars">
+                            <div class="planet">
+                                <div class="shadow"></div>
+                            </div>
+                        </div>
+                        <div class="jupiter">
+                            <div class="planet">
+                                <div class="shadow"></div>
+                            </div>
+                        </div>
+                        <div class="saturn">
+                            <div class="planet">
+                                <div class="shadow"></div>
+                            </div>
+                        </div>
+                    </div>
+            <div id="starAnimation">  
+                <div class="starParent">
+                    <div class="star"></div>
+                    <div class="star"></div>
+                    <div class="star"></div>
+                    <div class="star"></div>
+                    <div class="star"></div>
+                    <div class="star"></div>
+                    <div class="star"></div>
+                    <div class="star"></div>
+                </div>
+            </div>
+        <div id="lunarEclipce">
+            <div class="lunar">
+                <div class="eclipse"></div>
+            </div>
+            <div class="moonEclipse"></div>
+        </div>
+    </div>    
+        <div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-touch="false" data-bs-interval="false">
+            <div class="carousel-inner">
+                
+                <div class="carousel-item active">
+                <img src="images/distanc2.jpg" class="d-block w-100" alt="The picture of sun">
+                <div class="carousel-caption">
+                    <h2></h2>
+                    <p> </p>
+                    </div>
+            </div>
+            <div class="carousel-item">
+                <img src="images/suno.jpg" class="d-block w-100" alt="The picture of mercury">
+                <div class="carousel-caption">
+                    <h2>Sun</h2>
+                    <p>The Sun is the star at the center of the Solar System. It is a nearly perfect sphere of hot plasma. </p>
+                    </div>
+            </div>
+                <div class="carousel-item">
+                <img src="images/mercuri.jpg" class="d-block w-100" alt="The picture of mercury">
+                <div class="carousel-caption">
+                    <h2>Mercury</h2>
+                    <p>Mercury is the smallest planet in the Solar System and the closest to the Sun. </p>
+                    </div>
+            </div>
+                <div class="carousel-item">
+                <img src="images/venusik.jpg" class="d-block w-100" alt="The picture of venus">
+                <div class="carousel-caption">
+                    <h2>Venus</h2>
+                    <p>Venus is the second planet from the Sun. It is named after the Roman goddess of love and beauty. </p>
+                </div>
+            </div>
+                <div class="carousel-item">
+                <img src="images/earthon.jpg" class="d-block w-100" alt="The picture of earth">
+                <div class="carousel-caption">
+                    <h2>Earth</h2>
+                    <p>Earth is the third planet from the Sun and the only astronomical object known to harbour and support life. </p>
+                </div>
+            </div>
+                <div class="carousel-item">
+                <img src="images/marssss.jpg" class="d-block w-100" alt="The picture of mars">
+                <div class="carousel-caption">
+                    <h2>Mars</h2>
+                    <p>Mars is the fourth planet from the Sun and the second-smallest planet in the Solar System.</p>
+                </div>
+            </div>
+                <div class="carousel-item">
+                <img src="images/jupiter-carousel.jpg" class="d-block w-100" alt="The picture of jupiter">
+                <div class="carousel-caption">
+                    <h2>Jupiter</h2>
+                    <p>Jupiter is the fifth planet from the Sun and the largest in the Solar System.  </p>
+                    </div>
+            </div>
+                <div class="carousel-item">
+                <img src="images/saturn.corousel.jpg" class="d-block w-100" alt="The picture of saturn">
+                <div class="carousel-caption">
+                    <h2>Saturn</h2>
+                    <p>Saturn is the sixth planet from the Sun and the second-largest in the Solar System, after Jupiter. </p>
+                    </div>
+            </div>
+                <div class="carousel-item">
+                <img src="images/uranus.carousel.jpg" class="d-block w-100" alt="The picture of uranus">
+                <div class="carousel-caption">
+                    <h2>Uranus</h2>
+                    <p>Uranus is the seventh planet from the Sun.  </p>
+                    </div>
+            </div>
+                <div class="carousel-item">
+                <img src="images/neptun.carousel.jpg" class="d-block w-100" alt="The picture of neptun">
+                <div class="carousel-caption">
+                    <h2>Neptune</h2>
+                    <p>Neptune is the eighth and farthest known Solar planet from the Sun. </p>
+                    </div>
+            </div>
+                <div class="carousel-item">
+                <img src="images/pluton.carousel.jpg" class="d-block w-100" alt="The picture of pluton">
+                <div class="carousel-caption">
+                    <h2>Pluto</h2>
+                    <p>Pluto (minor-planet designation: 134340 Pluto) is a dwarf planet in the Kuiper belt, a ring of bodies beyond the orbit of Neptune. It was the first and the largest Kuiper belt object to be discovered. </p>
+                </div>
+            </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+    </div>
+<div class="solar-system">
+    <h3>Interesting facts about Planets</h3>
+    <div class="planets">
+    
+    <div class="content">
+    <div class="box-content">
+        <div class="boxOne boxTwo">
+            <img src="images/երկիր.jpg">
+        </div>
+        <div class="boxOne boxThree">
+        <div class="text">
+        <h2>Earth</h2>
+        </div><br>
+        <div class="content">Did you know Earth is not actually a sphere? That we are rocketing around the sun at 67,000 mph?  </div>
+    </div>
+        </div>
+    </div>
+    <div class="content">
+        <div class="box-content">
+        <div class="boxOne boxTwo">
+            <img src="images/jupiter1.jpg">
+        </div>
+        <div class="boxOne boxThree">
+        <div class="text">
+        <h2>Jupiter</h2>
+        </div><br>
+        <div class="content">The mass of Jupiter is 318 times as massive as the Earth. Jupiter is 2.5 times more massive than all of the other planets combined.  </div>
+    </div>
+        </div>
+    </div>
+    
+    <div class="content">
+        <div class="box-content">
+        <div class="boxOne boxTwo">
+            <img src="images/saturn1.jpg">
+        </div>
+        <div class="boxOne boxThree">
+        <div class="text">
+        <h2>Saturn</h2>
+        </div><br>
+        <div class="content">Saturn isn't the only planet to have rings, but it definitely has the most beautiful ones. </div>
+    </div>
+        </div>
+    </div>
+    
+    <div class="content">
+        <div class="box-content">
+        <div class="boxOne boxTwo">
+            <img src="images/neptune1.jpg">
+        </div>
+        <div class="boxOne boxThree">
+        <div class="text">
+        <h2>Neptun</h2>
+        </div><br>
+        <div class="content">Neptune is the eighth and farthest known Solar planet from the Sun.  </div>
+    </div>
+        </div>
+    </div>
+    
+    <div class="content">
+        <div class="box-content">
+        <div class="boxOne boxTwo">
+        <img src="images/mars1.jpg"></div>
+        <div class="boxOne boxThree">
+        <div class="text">
+        <h2>Mars</h2>
+        </div><br>
+        <div class="content">Mars is the fourth planet from the Sun and the second-smallest planet in the Solar System.  </div>
+    </div>
+        </div>
+    </div>
+    
+    <div class="content">
+        <div class="box-content">
+        <div class="boxOne boxTwo">
+        <img src="images/venera1.jpg"></div>
+        <div class="boxOne boxThree">
+        <div class="text">
+        <h2>Venus</h2>
+        </div><br>
+        <div class="content">Venus is the second brightest natural object in the night sky after the Moon.  </div>
+    </div>
+        </div>
+    </div>
+    
+    <div class="content">
+        <div class="box-content">
+        <div class="boxOne boxTwo">
+            <img src="images/ur.jpg">
+        </div>
+        <div class="boxOne boxThree">
+        <div class="text">
+        <h2>Uranus</h2>
+        </div><br>
+        <div class="content">Like Saturn, Jupiter, and Neptune, Uranus is a big ball of gas, often called a jovian or gas giant world</div>
+    </div>
+        </div>
+    </div>
+    
+    <div class="content">
+        <div class="box-content">
+            <div class="boxOne boxTwo">
+                <img src="images/mercuryyy.jpg">
+            </div>
+            <div class="boxOne boxThree">
+                <div class="text">
+                <h2>Mercury</h2>
+            </div><br>
+            <div class="content"> Mercury is the smallest planet in the Solar System and the closest to the Sun</div>
+            </div>
+        </div>
+    </div>
+    <div class="content">
+        <div class="box-content">
+            <div class="boxOne boxTwo">
+                <img src="images/pluto1.jpg">
+            </div>
+            <div class="boxOne boxThree">
+                <div class="text">
+                <h2>Pluto</h2>
+            </div><br>
+            <div class="content">Pluto (minor-planet designation: 134340 Pluto) is a dwarf planet in the Kuiper belt. </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+    <div class="leftSide">
+        <div class="publications">
+            <div class="pageCurl">
+                <div>
+                     <h2>Four largest asteroids</h2>
+                </div>
+                <div>
+                    <p>The Four largest asteroids in the belt are called Ceres, Vesta and Pallas. These large asteroids make up about half of the mass of the entire asteroid belt.</p> 
+                    <p>The pictures below show the four largest asteroids</p> 
+                </div>  
+            </div>    
+            <div class="asteroids">
+                <div class="asteroidsText">
+                    <div>
+                        <div class="picture1"></div>
+                        <div class="pictureContent1">
+                            <h4>Ceres</h4>
+                            <p>Ceres is the largest asteroid known to date. To give you an idea of the asteroid’s size, it is roughly as big as Alaska, the largest state in the USA. Ceres rotates around the sun once every 1,678 Earth days. 
+                                It is the only asteroid large enough for its own gravity to make it round, which is a unique feat in the asteroid world. This is called the “hydrostatic equilibrium” and it was one of the main reasons the debate over its Ceres status took place.</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="picture2"></div>
+                        <div class="pictureContent2">
+                            <h4>Vesta</h4>
+                            <p>Vesta is the second-largest asteroid. And even though it is smaller than Ceres, it is a rather bright asteroid that you can sometimes see with the naked eye at night. This fact alone makes Vesta one of the coolest asteroids out there. 
+
+                            Vesta is roughly the size of Texas and North Carolina. It’s only half the size of Ceres, but it is still a very massive object in space. Even though it is rather large, the asteroid doesn’t quite reach the criteria to gain dwarf planet status. </p>
+                        </div>        
+                    </div>
+                </div> 
+                <div class="asteroidsText1">  
+                    <div>
+                        <div class="picture3"></div>
+                        <div class="pictureContent3">
+                            <h4>Palas</h4>
+                            <p>Pallas the third largest asteroid on our list. At the time of its first classification back in 1802, it was considered a planet. However, as more asteroids were later discovered, it soon became apparent that science needed a new title for these small celestial objects. 
+
+                                For a long time, due to the similar size of Pallas and Vesta, there was a debate as to which one was bigger. However, it seems that Vesta has now won that battle. Pallas is about the size of Britain.</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="picture4"></div>
+                        <div class="pictureContent4">
+                            <h4>Hygiea</h4>
+                            <p>Hygiea (minor-planet designation: 10 Hygiea) is a major asteroid and possible dwarf planet located in the main asteroid belt. With a diameter of 434 kilometres (270 mi) and a mass estimated to be 3% of the total mass of the belt,[10] it is the fourth-largest asteroid in the Solar System by both volume and mass. In some spectral classifications it is the largest of the dark C-type asteroids with a carbonaceous surface, whereas in others it is second after 1 Ceres.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>     
+        </div>     
+    <div class="rightSide">
+        <h2>Popular publications</h2>
+        <div>
+            <input class="readMore" id="check" type="checkbox">
+            <div class="readMore1">
+            <h4>Other planets in our solar system can masquerade as Earth from afar</h4><br>
+            <p>Taking a picture of a far-off world may not be enough to identify what sort of planet it is. We know this because from outside our solar system, every other planet except for Jupiter could be mistaken for Earth at some angles.</p>
+            <p class="readMore2">When planets beyond our solar system, called exoplanets, are discovered via directly taking an image of them, we usually only get two pieces of information from that image: the planet’s apparent brightness.</p>
+            </div>
+            <label class="readMore3" for="check"></label>
+        </div>
+        <div>
+            <input class="readMore" id="check1" type="checkbox">
+            <div class="readMore1">
+            <h4>The solar system has too many moons – it's time for a cull</h4><br>
+            <p>OK, WHAT I’m about to say may cause some distress. You remember how it was with Pluto? In 2006, the International Astronomical Union (IAU) voted to downgrade the much-loved ninth planet to a mere dwarf planet. More than a decade later, it seems some people still haven’t gotten over it</p>
+            <p class="readMore2">But I’m still going to say it: things are getting a little out of hand with the solar system’s moons.On 7 October, astronomers announced the discovery of 20 moons around Saturn. This took the total number of moons in the solar system to 214. </p>
+            </div>
+            <label class="readMore3" for="check1"></label>
+        </div>
+        <div>
+            <input class="readMore" id="check2" type="checkbox">
+            <div class="readMore1">
+            <h4>Life on Venus may have only been possible for its first billion years</h4><br>
+            <p>Venus may have been habitable for close to a billion years – far less time than previously thought, but still long enough for life to evolve.
+
+                The planet’s atmosphere is mainly made up of carbon dioxide and its surface is too hot for liquid water.  </p>
+            <p class="readMore2">The planet’s atmosphere is mainly made up of carbon dioxide and its surface is too hot for liquid water. Dennis Höning at VU Amsterdam in the Netherlands and his colleagues modelled how Venus may have developed its atmosphere.</p>
+            </div>
+            <label class="readMore3" for="check2"></label>
+        </div>
+        
+    </div>
+    </div> 
+</div> 
+</main>
+
+        <footer>
+            <div class="container">
+                <div class="main-footer">
+                    <div class="miniFooter">
+                        <h2>Contact us</h2>
+                        <p>eny.hovhannisyan@gmail.com</p>
+                    </div>
+                    <div>
+                        <img src="Logo/logo.jpg" alt="logo">
+                        <h2>Solar System Website</h2>
+                    </div>
+                    <div>
+                        <h2>Follow us</h2>
+                            <ul>
+                                <li><a href="https://www.facebook.com/eny.hovhannisyan/" target="_blank"><i class="fa fa-facebook-f"></i></a></li>
+                                <li><a href="https://twitter.com/home?lang=en" target="_blank"><i class="fa fa-twitter-square"></i></a></li>
+                            </ul>
+                            <span><a href="#"><i class="fa fa-arrow-up w3-margin-right"></i></a></span>
+                    </div>
+                    <div>
+                        <p>Copyright © Solar System Website 2021. All Rights Reserved</p>
+                    </div>
+                    </div>
+            </div>
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>  
+        <script src="JS/script.js"></script>   
+</body>
+</html>
+
+
+
+
+

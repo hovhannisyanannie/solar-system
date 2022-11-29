@@ -1,0 +1,1323 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,400;0,700;1,100;1,300;1,400;1,700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,700;0,900;1,200;1,300;1,400;1,700&display=swap');
+ 
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+html::-webkit-scrollbar{
+    width: 12px;
+}
+  
+  html::-webkit-scrollbar-track{
+    background:black;
+}
+  
+  html::-webkit-scrollbar-thumb{
+    background-color:rgb(209, 119, 15);
+    border-radius: 8px;
+    text-align: center;
+}
+  
+body{
+    background-color: black!important;   
+} 
+
+.container{
+    max-width: 1170px;
+    width: 100%;
+    margin:0 auto;   
+} 
+
+
+/* header start */
+header{
+    position: sticky;
+    top:10px;
+    min-height: 110px;
+    width: 100%;
+    z-index:2;  
+}
+
+.content{
+    display: flex;
+    justify-content: space-between;
+}
+
+img{
+    width: 90px;
+    height: 90px;
+    margin:0 25px 0 0; 
+    border-radius: 90px;    
+}
+
+.logo{
+    display: flex;
+    justify-content: flex-start;   
+}
+
+/* Nav start */
+nav{
+    width:60%;
+    min-height:70px;
+    text-shadow: 0 0 25px white;
+} 
+
+ul{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    font-size: 20px;
+}
+
+ul li{
+    position: relative;
+    box-shadow: -3px 5px 10px hsl(0 0% 25%);
+    padding:8px;
+    white-space: nowrap; 
+}
+
+li ul {
+    position: absolute;
+    top:100%;
+    left:0;
+}
+
+ul li a{
+    text-decoration: none;
+    color:white;
+    text-shadow: 0 0 20px hsl(0, 0%, 100%); 
+}
+
+
+#menu>li{
+    list-style: none;
+    margin: 25px 5px 0;
+}
+
+#menu i{
+    margin-left:5px;
+}
+
+.submenu1{
+    display: flex;
+    flex-direction: column;
+    height: 115px;
+    margin-top: 0;
+    margin-left: -30px;
+    display: none; 
+    opacity:0.9;   
+}
+
+.submenu1{
+    width: 174px;
+}
+
+.submenu1 li{
+list-style: none; 
+border-bottom:none;
+}
+
+.dropdown:hover .submenu1{
+display:block;  
+}
+
+#select{
+    display:none;  
+}
+
+#bars{
+ position:fixed;
+ top:20px;
+ right:-35px;
+ font-size: 35px; 
+ cursor: pointer; 
+ color:white;
+ z-index:1;
+}
+
+#cancel{
+ position:fixed;
+ top:20px;
+ right:-125px;
+ font-size: 35px; 
+ cursor: pointer; 
+ color:white;
+ z-index: 1;
+}
+
+.contact{
+    left: -260px;
+    display:none;    
+}
+
+.contactUs:hover .contact{
+    display:block;  
+}
+
+form{
+    width: 322px;
+    min-height:350px;
+     color:white;
+     
+}
+
+form label{
+    margin-left:5px;
+    font-size: 16px;
+}
+
+form input{
+    line-height: 1.5;
+    padding:12px 16px;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    margin: 5px 0 10px 5px;
+    border:none;   
+}
+
+.side {
+    width:340px;
+    min-height:400px;
+    background: rgba(2, 2, 2, 0.3);
+}
+
+#menu4:hover #side{
+    display:block;
+}
+
+.side h2{
+    color:white;
+    padding-bottom:20px;
+}
+
+form button{
+    padding:8px 16px;
+    background: #fffbfb;
+    color:black;
+    border:none;
+    margin: 10px 0 0 200px;
+}
+
+.message input{
+    height:90px;
+}
+
+a:hover{
+    color:rgb(187, 187, 210)!important;
+}
+  
+/* Nav end */
+
+/* Header end */
+
+/* Main start */
+
+main{
+    overflow-x: hidden!important;
+}
+
+#general{
+    display:flex;
+    justify-content: center;
+    min-height:640px;
+    position:static;
+}
+
+.generalText{
+    position:relative;
+}
+
+.generalText>div{
+    position:absolute;
+    right:140px;
+    top:50px;
+    width:350px;
+    height:100px;
+    color: white;
+    text-align:center;
+    text-shadow: 0 0 20px white;
+}
+
+.type{
+    position:relative;
+      width:40px;
+      height:40px;
+      color: white;
+    }
+
+.text{
+    position: absolute;
+    color: white;    
+}
+      
+.text h1{
+    padding:8px;
+    font-size: 32px; 
+    overflow: hidden;
+    white-space: nowrap; 
+    animation: textAnimation 6s;
+}
+
+@keyframes textAnimation{
+    from {
+        width:0;
+    }
+    to {
+        width:100%
+    }
+}
+
+#sunPlanets{
+    position: relative;
+    margin: 0 auto;
+    bottom:150px;
+    min-height:265px;
+    margin-top: 230px;
+    perspective: 1000px;
+    perspective-origin: 60% 50%;
+    transform: rotate(-10deg);
+}
+    
+    #sunPlanets > div{
+    position: relative;
+    margin: 0 auto;
+    transform-style: preserve-3d;
+    height: 0;
+}
+
+.sun{
+    width: 250px;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    height: 125px !important;
+}
+    
+.sun .small-sun{
+    width: 250px;
+    height: 250px;
+    background: url(../images/sun.png) no-repeat;
+    background-size: cover;
+    border-radius: 250px;
+    margin: 0 auto;
+    animation: sun 40s infinite linear;
+}
+.planet{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    animation-iteration-count: infinite;
+    overflow: hidden;
+}
+    
+.shadow{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: transparent url(../images/shadow.png) 0% 0% no-repeat;
+    background-size: cover;
+    border-radius: 100%; 
+}
+
+.murcury{
+    position: absolute;
+    width: 400px;
+    z-index: 2;
+    animation: orbitmurcury 12s infinite linear;
+    top: -7.5px; 
+}
+.murcury .planet{
+    width: 15px;
+    height: 15px;
+    background-image: url(../images/mercury.png);
+    animation: NoSpin 12s infinite linear;
+}
+.murcury .shadow{
+    animation: shadow 12s infinite linear;
+}
+    
+.venus{
+    position: absolute;
+    width: 506px;
+    z-index: 3;
+    animation: orbitvenus 15s infinite linear;
+    top: -19px;
+}
+.venus .planet{
+    width: 38px;
+    height: 38px;
+    background-image: url(../images/venus.png);
+    animation: NoSpin 15s infinite linear;
+}
+
+.venus .shadow{
+    animation: shadow 15s infinite linear;
+}
+.earth{
+    position: absolute;
+    width: 610px;
+    z-index: 4;
+    animation: orbitearth 20s infinite linear;
+    top: -20px;
+}
+.earth .planet{
+    width: 40px;
+    height: 40px;
+    background-image: url(../images/earth.png);
+    animation: NoSpin 20s infinite linear;
+}
+
+.earth .shadow{
+    animation: shadow 20s infinite linear;
+}
+
+.mars{
+    position: absolute;
+    width: 706px;
+    z-index: 5;
+    animation: orbitmars 30s infinite linear;
+    top: -11px;
+}
+
+.mars .planet{
+    width: 22px;
+    height: 22px;
+    background-image: url(../images/mars.png);
+    animation: NoSpin 30s infinite linear;
+ }
+
+.mars .shadow{
+    animation: shadow 30s infinite linear;
+}
+
+.jupiter{
+    position: absolute;
+    width: 1100px;
+    z-index: 6;
+    animation: orbitjupiter 50s infinite linear;
+    top: -64px;
+}
+    
+    .jupiter .planet{
+    width: 128px;
+    height: 128px;
+    background-image: url(../images/jupiter.png);
+    animation: NoSpin 50s infinite linear;
+}
+    
+.jupiter .shadow{
+    animation: shadow 50s infinite linear;
+}
+    
+    
+    @keyframes sun{
+        0%{
+    transform: rotate(0);
+    }
+        100%{
+    transform: rotate(-360deg);
+    }
+    }
+    @keyframes shadow{
+        0%{
+    background-position: 130% 0%;
+    }
+        33%{
+    background-position: 50% 0%;
+    }
+        55%{
+    background-position: 0% 0%;
+    }
+        80%{
+    background-position: -50% 0%;
+    }
+        100%{
+    background-position: -50% 0%;
+    }
+    }
+    @keyframes orbitmurcury{
+        0%{
+    z-index: 2;
+    transform: rotateY(0);
+    }
+        49%{
+    z-index: 2;
+    }
+        50%{
+    z-index: -2;
+    }
+        99%{
+    z-index: -2;
+    }
+        100%{
+    z-index: 2;
+    transform: rotateY(360deg);
+    }
+    }
+    
+    @keyframes orbitvenus{
+        0%{
+    z-index: 3;
+    transform: rotateY(0);
+    }
+        49%{
+    z-index: 3;
+    }
+        50%{
+    z-index: -3;
+    }
+        99%{
+    z-index: -3;
+    }
+        100%{
+    z-index: 3;
+    transform: rotateY(360deg);
+    }
+    }
+    @keyframes orbitearth{
+        0%{
+    z-index: 4;
+    transform: rotateY(0);
+    }
+        49%{
+    z-index: 4;
+    }
+        50%{
+    z-index: -4;
+    }
+        99%{
+    z-index: -4;
+    }
+        100%{
+    z-index: 4;
+    transform: rotateY(360deg);
+    }
+    }
+    
+    @keyframes orbitmars{
+        0%{
+    z-index: 5;
+    transform: rotateY(0);
+    }
+        49%{
+    z-index: 5;
+    }
+        50%{
+    z-index: -5;
+    }
+        99%{
+    z-index: -5;
+    }
+        100%{
+    z-index: 5;
+    transform: rotateY(360deg);
+    }
+    }
+    
+    @keyframes orbitjupiter{
+        0%{
+    z-index: 6;
+    transform: rotateY(0);
+        }
+        49%{
+    z-index: 6;
+        }
+        50%{
+    z-index: -6;
+        }
+        99%{
+    z-index: -6;
+        }
+        100%{
+    z-index: 6;
+    transform: rotateY(360deg);
+        }
+    }
+    
+    @keyframes NoSpin{
+        form{
+    transform: rotateY(0);
+        }
+        to{
+    transform: rotateY(-360deg);
+        }
+    
+    }
+    @keyframes anti-spin-rings{
+        form{
+    transform: rotateY(0) rotateX(73deg);
+        }
+        to{
+    transform: rotateY(-360deg) rotateX(73deg);
+        }
+    }    
+    
+#starAnimation, #lunarEclipce{
+    width:100%;
+    min-height:265px; 
+    z-index:-1;
+}
+
+.starParent{ 
+    position: relative;  
+    width: 100%;
+    min-height: 470px;
+    overflow: hidden;
+    background-color:black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+   
+#starAnimation{
+    display:none; 
+}    
+#starAnimation>div>h3::after {
+    font-family: FontAwesome;
+    content:"\f118";
+    color:#f1e20c;
+    margin-left:5px;     
+}
+
+#starAnimation>div>h3,.lunarEclipce>div>h3,.sun-text>h3 {
+    color:black;
+    font-size:30px;
+    margin-left:40%;      
+}
+
+#lunarEclipce{
+    display:none;
+    min-height:500px;
+    width: 100%; 
+}
+
+.lunar-text,.star-text,.sun-text {
+    background-color: hsl(170, 30%, 96%);
+    padding:15px 0 15px 0;
+    height:60px;  
+}
+
+.lunar-text:hover,.star-text:hover,.sun-text:hover{
+    background-color: rgb(85, 81, 81);
+}
+
+.starAnimation>div>h3:hover,.lunarEclipce>div>h3:hover,.sun-text>h3:hover{
+    font-size:smaller;
+    transition: 2s;
+}
+
+.sun-text>h3{
+    margin-left:25%!important;
+}
+
+.starParent .star{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    animation:starAnimation1 8s ease-in-out infinite, starAnimation2 14s linear infinite;
+}
+
+
+.starParent .star:first-child{
+    background: url(../images/star1.png);
+    animation-delay: 0s;
+}
+
+.starParent .star:nth-child(2){
+    background: url(../images/star2.png);
+    animation-delay: -1s;
+}
+
+.starParent .star:nth-child(3){
+    background: url(../images/star3.png);
+    animation-delay: -2s;
+    }
+
+.starParent .star:nth-child(4){
+    background: url(../images/star4.png);
+    animation-delay: -3s;
+}
+
+.starParent .star:nth-child(5){
+    background: url(../images/star5.png);
+    animation-delay: -4s;
+}
+
+.starParent .star:nth-child(6){
+    background: url(../images/star6.png);
+    animation-delay: -5s;
+}
+
+.starParent .star:nth-child(7){
+    background: url(../images/star7.png);
+    animation-delay: -6s;
+}
+
+.starParent .star:last-child{
+    background: url(../images/star8.png);
+    animation-delay: -7s;
+}
+
+@keyframes starAnimation1{
+    0%,20%,40%,60%,80%,100%{
+    opacity:0;
+    }
+    10%,30%,50%,70%,90%{
+    opacity:1;
+    }
+}
+
+@keyframes starAnimation2{
+    0%{
+    transform:scale(1)
+    }
+    100%{
+    transform:scale(2)
+    }
+}
+
+#lunarEclipce{
+    position:relative;
+    background-color:black;
+    overflow: hidden; 
+    width:100%;
+    height:450px;
+}
+
+.moonEclipse{
+    width: 250px;
+    height: 250px;
+    background-image: linear-gradient(180deg, rgb(226, 162, 25), rgb(167, 153, 116));
+    position:relative;
+    left:400px;
+    top:50px;
+    border-radius:100%;
+    box-shadow:0 0 30px rgb(207, 202, 202); 
+}
+
+.moonEclipse:before{
+content:"";
+position:absolute;
+width:100%;
+height: 100%;
+background-color:black;
+border-radius:100%;
+left:-300px;
+animation:moon 20s linear infinite;
+}
+    
+@keyframes moon{
+    0%{
+        left:-300px;
+    }
+    100%{
+        left:300px;
+    }
+}
+
+   
+#carouselExampleControlsNoTouching{
+    z-index: 1;
+    width:100%;
+    max-width: 1170px;    
+}
+
+#carouselExampleControlsNoTouching img{
+    width:100%;
+    height:100%;
+    border-radius:0; 
+} 
+
+.carousel-caption{
+    left:72%!important;
+    bottom:50%!important;   
+}
+
+.carousel-caption h2{
+    text-shadow: 0 0 25px white;
+    font-size: 36px;
+    margin:40px -0px 20px 75px;
+}
+
+.carousel-caption p{
+    width:250px;
+    text-shadow: 0 0 25px white;
+} 
+
+.solar-system{
+    position:relative;
+    width: 100%; 
+    background-color: black;
+}
+
+.solar-system h3{
+    color:white;
+    text-align:center;
+    padding:35px 0;
+    font-size: 28px;
+    text-shadow: 0 0 25px white;    
+}
+
+.planets{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap:100px;
+    max-width: 1050px;
+    margin:50px auto;
+}
+
+.planets .content{
+    width: 200px;
+    height: 270px;
+    margin: 0 auto; 
+    perspective: 800px; 
+}
+
+.box-content{
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: transform 2s ease-in-out;
+    position: relative;  
+    transform-origin: bottom left -50%;
+  }
+  
+.box-content:hover{
+    cursor: pointer;
+   transform: rotateY(-75deg) translateX(-100px) translateZ(100px);  
+  }
+  
+.box-content::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 300px; 
+    left: 0;
+    bottom: -190px;
+    background:black;
+    opacity: 0.1;
+    transform-style: preserve-3d;
+    transform: rotateX(90deg) translate3d(0px, -100px, 0px); 
+    filter: blur(25px); 
+  }
+
+   .boxOne {
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0; 
+  }
+  
+.boxOne img{
+    width: 100%;
+    height: 100%;
+    object-fit:contain;
+    border-radius: 30px;
+  }
+  
+.boxTwo{
+    box-shadow: -3px 5px 10px hsl(0 0% 25%);
+}
+   
+.boxThree{
+    background-image: linear-gradient(rgb(34, 36, 36), rgb(43, 47, 47));
+    box-shadow: inset 0px 0px 130px hsl(0 0% 20%);
+    color: white;
+    transform: rotateY(90deg) translate3d(100px, 0px, 100px);
+  }
+
+ 
+  .boxThree .text{
+    color:white;
+    font-size: 18px;
+    position: relative;
+    /* left:16px; */
+}
+
+  .boxThree .text::after{
+    content: "";
+    position: absolute;
+    width: 90%;
+    height: 3px;
+    left: 0;
+}
+  
+  .boxThree .content{
+    color:white;
+    margin: 12px;
+    font-size: 18px;
+    line-height: 24px; 
+    padding: 8px;
+  }  
+
+/* Main end */
+
+
+/* Left side/Article start */
+
+.leftSide{
+    width: 100%;
+    display:flex;
+    justify-content:space-between;
+    background-image: linear-gradient(180deg, rgb(20, 30, 37) 0%, rgba(255, 255, 255, 0.5) 100%);
+}
+
+.publications{
+    display:block;
+    max-width:70%;
+}
+
+.asteroids{
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    min-height:350px;
+    width:70%;
+    margin:0 auto!important;
+}
+
+.asteroidsText, .asteroidsText1{
+    display:flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    gap:30px;
+    width: 100%;   
+}
+
+.asteroids>div>div{
+    width:240px;
+    height:400px;
+    
+}
+
+.asteroids>div>div>div{
+    width: 240px;
+    height: 180px;  
+}
+
+.pictureContent1, .pictureContent2,.pictureContent3,.pictureContent4{
+    overflow:scroll;
+    overflow-x:auto;
+    background-image: linear-gradient(180deg, rgb(103, 111, 119) 0%, rgba(59, 55, 55, 0.5) 100%);
+    color:white;
+}
+
+.pictureContent1 h4,p, .pictureContent2 h4,p,.pictureContent3 h4,p,.pictureContent4 h4,p{
+    margin:10px;
+}
+
+.picture1{
+    background-image: url("../images/ceresss.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;   
+} 
+
+.picture2{
+    background-image: url("../images/vesta.jpg");
+    background-size: 100% 100%;
+   background-repeat: no-repeat;
+    
+} 
+.picture3{
+    background-image: url("../images/pallasik.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    
+} 
+
+.picture4{
+    background-image: url("../images/hygiea.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;  
+} 
+
+.pageCurl{
+    width: 70%;
+    height: 380px;
+    perspective: 1000px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    position: relative;
+}
+
+.pageCurl h2{
+    padding:45px 10px 0;
+}
+
+.pageCurl>div{
+    position:absolute;
+    max-width: 240px; 
+    height: 340px;
+    top:10px;
+    text-align: center;
+    box-shadow: 5px 5px 15px #333;
+}
+
+.pageCurl>div:first-child{
+    font-size:16px;
+    color:white;  
+    background-color:rgb(16, 22, 27);
+    transform-origin: left center;
+    transition: 3s;
+    z-index:2;
+}
+
+.pageCurl>div:last-child{
+    font-size:16px;
+    color:white;  
+    background-color:rgb(30, 38, 46);
+    transform-origin: left center;
+    transition: 3s;   
+    z-index:1;
+    overflow-y: auto;
+}
+
+.pageCurl>div:last-child p{
+    margin:15px;
+}
+
+.pageCurl>div:first-child:hover{
+    transform: rotateY(-180deg);
+    background-color:rgb(104, 109, 114);
+}
+
+
+.pageCurl>div>h2{
+    text-align:center;
+  }
+.rightSide{
+    width:30%;
+    color:black;
+    box-shadow: -3px 5px 10px hsl(0 0% 25%); 
+}
+
+.rightSide >div{
+    padding: 20px;
+    width:100%;
+    box-shadow: 0 4px 10px 0 rgb(0 0 0 / 20%), 0 4px 20px 0 rgb(0 0 0 / 19%);
+    color:white;
+    background-image: linear-gradient(180deg, rgb(20, 30, 37) 0%, rgba(163, 155, 155, 0.5) 100%);
+}
+
+.rightSide >div>div p, label{
+    margin:8px;
+}
+
+.rightSide >div>div h4{
+    text-align:center;
+    padding-top:5px;
+    font-size:20px;
+}
+
+.rightSide> h2{
+    margin-top:30px;
+    background-color:rgb(30, 38, 46);
+    padding:12px;
+    text-align:center;
+    box-shadow: -3px 5px 10px hsl(0 0% 25%); 
+    color:white;
+}
+.readMore {
+    display: none;
+}
+  
+  .readMore2 {
+    font-size: 0;
+    max-height: 0; 
+    opacity: 0;
+    transition: 1s ease;
+}
+  
+.readMore:checked ~ .readMore1 .readMore2 {
+    font-size: inherit;
+    max-height: 150px;
+    opacity: 1;
+}
+  
+.readMore ~ label.readMore3:before {
+    content: "Read more";
+    cursor: pointer;
+}
+  
+.readMore:checked ~ label.readMore3:before {
+    content: "Read less";
+    cursor: pointer;
+}
+
+
+  /* Footer start */
+footer{
+    min-height: 200px;
+    color: white;
+    text-shadow: 0 0 20px white; 
+    background-image: linear-gradient(180deg, rgb(20, 30, 37) 0%, rgba(129, 124, 124, 0.5) 100%);  
+    text-align: center;  
+    position: relative;
+    overflow-x: hidden!important;
+    text-align:center;
+}
+
+.main-footer{  
+    display:flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    gap:20px;
+    margin:50px auto;
+}
+
+.main-footer div:nth-child(4) {
+    display: block;
+    position: fixed;
+    bottom:0;
+    width:100%;
+    min-height: 40px;
+    background-image: linear-gradient(180deg, rgb(20, 30, 37) 0%, rgba(42, 39, 39, 0.5) 100%);
+    z-index: 1;   
+} 
+
+.main-footer div:nth-child(4) p{
+    padding-top:10px;
+}
+
+
+.main-footer div:nth-child(3) ul>li:first-child{
+    background-color: black;
+    list-style-type: none;  
+    text-align:center;
+}
+
+.main-footer div:nth-child(3) ul>li:last-child{
+    background-color: black;
+    list-style-type: none;  
+}
+
+.main-footer div:nth-child(3) a{
+    color: white;
+    text-shadow: 0 0 20px white;
+    text-align:center;
+    
+}
+
+.main-footer div:nth-child(3) span{
+    display: inline-block;
+    text-align: right;
+    position: absolute;
+    right:5%;
+    bottom:27%;   
+} 
+.main-footer span a{
+    padding:8px 16px;
+    background-color:black;   
+}
+
+/* Footer end */
+
+
+/* Media */
+
+@media only screen and (max-width: 1060px){
+
+    nav>ul {
+        position: fixed; 
+        display:block;
+        min-height:310px;
+        width:100%; 
+        max-width:200px;
+        right:-100%;
+        top:0px;
+        background-color: hsl(0, 0%, 2%);  
+    }
+
+    label #bars{
+        right:20px; 
+        top:20px;
+       } 
+ 
+    #select:checked ~nav>ul{
+        right:0px;   
+    }
+
+    #menu{
+        height:600px;
+    }
+
+    .submenu1{
+        position:static;
+        margin-left:2px;
+        width: 130px;
+        height: 600px;
+        display:none;
+        background: rgba(255,255,255,0.04);
+        box-shadow: -2px 4px 26px 0px rgba(0,0,0,0.15);
+    }
+
+    .submenu1 li{
+        padding:7px 12px 7px 0;
+    }
+
+    .submenu1 li a{
+        margin-left: 28px;
+    }
+
+    #select:checked ~ label #cancel{
+        right:0px; 
+        top:0;   
+    }
+
+    #select:checked ~ label #bars{
+        opacity:0;   
+    }
+
+    ul li{ 
+        margin-left:-30px;
+    }
+
+    .contactUs:hover .contact{
+        display:none;  
+    }
+
+    .generalText>div{
+        left:0px;
+        top:30px;   
+    }
+
+    .generalText>div{
+        display:none;
+    }
+
+    .carousel-caption{
+        font-size:12px;
+        left:65%!important;
+    }
+
+    .solar-system h3{
+        font-size: 26px;   
+    }
+
+    .leftSide{
+        width:100%;
+        display:flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin:0 auto;
+    }
+
+    .rightSide, .pageCurl, .asteroids{
+        width:100%;
+    }
+
+    .moonEclipse{
+        left:250px;
+    }
+
+    .main-footer span{
+        display:none;
+    }
+
+    .main-footer div:nth-child(3) ul>li:first-child{
+        margin-left: -25px;
+    }
+    
+    .main-footer div:nth-child(3) ul>li:last-child{
+        margin-right:0;     
+    } 
+
+    .main-footer div:nth-child(4) p{
+        text-align: center;
+    }
+
+}
+
+@media only screen and (max-width: 1190px){
+    .generalText>div{
+        left:0px;
+        top:30px;   
+    }
+}
+
+  
+@media only screen and (max-width: 870px){
+    .solar-system{
+        min-height:initial;
+    }
+
+    .planets{
+        gap:50px;
+    }
+
+    .solar-system h3{
+        font-size: 22px; 
+    }
+
+   .planets .content:last-child{
+        margin-bottom:25px; 
+    }
+
+    .main-footer{
+        flex-direction: column;
+    }
+    .carousel-caption{
+        display: none;
+    }
+
+        
+    .main-footer div:nth-child(3) span{
+        bottom:20%;   
+    } 
+           
+}
+
+
+@media only screen and (max-width: 750px){
+    #general{
+        min-height:400px;
+    }
+
+    #sunPlanets {
+        bottom: 200px;
+        margin-top: 200px;
+    }
+
+    .moonEclipse{
+        left:150px;
+    }
+}
+
+
+@media only screen and (max-width: 510px){
+    .planets{
+        gap:50px;
+    }
+    
+    .moonEclipse{
+        left:100px;
+    }
+        .main-footer div:nth-child(4) p{
+        font-size:12px;
+    }
+}
+
+@media only screen and (max-width: 380px){
+    
+    .moonEclipse{
+        left:50px;
+    }
+}
