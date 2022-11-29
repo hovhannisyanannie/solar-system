@@ -844,7 +844,7 @@ animation:moon 20s linear infinite;
     color:white;
     font-size: 18px;
     position: relative;
-    /* left:16px; */
+    left:16px;
 }
 
   .boxThree .text::after{
